@@ -1,38 +1,12 @@
-# capacitor-plugin-safe-area
+# @varsitysoftware/capacitor-plugin-safe-area
 
-<p align="left">
-<a href="https://img.shields.io/badge/support-Android-516BEB?logo=android&logoColor=white&style=plastic">
-<img src="https://img.shields.io/badge/support-Android-516BEB?style=plastic"/>
-</a>
-<a href="https://img.shields.io/badge/support-Android-516BEB?logo=android&logoColor=white&style=plastic">
-<img src="https://img.shields.io/badge/support-IOS-516BEB?style=plastic"/>
-</a>
-<a href="https://www.npmjs.com/package/capacitor-plugin-safe-area">
-<img src="https://img.shields.io/badge/npm-V0.0.6-516BEB?style=plastic"/>
-</a>
-</p>
-
-a capacitor V3/V4 plugin to get safeArea info on Android and IOS
+A plugin to get safe area info
 
 ## Install
 
 ```bash
-npm install capacitor-plugin-safe-area
+npm install @varsitysoftware/capacitor-plugin-safe-area
 npx cap sync
-```
-
-## Useage
-
-```typescript
-import { SafeArea } from 'capacitor-plugin-safe-area';
-
-SafeArea.getSafeAreaInsets().then(({ insets }) => {
-  console.log(insets);
-});
-
-SafeArea.getStatusBarHeight().then(({statusBarHeight}) => {
-  console.log(statusBarHeight, 'statusbarHeight');
-})
 ```
 
 ## API

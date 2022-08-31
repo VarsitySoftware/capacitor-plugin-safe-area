@@ -4,7 +4,7 @@ export default {
     {
       file: 'dist/plugin.js',
       format: 'iife',
-      name: 'capacitorSafeArea',
+      name: 'capacitorCapacitorSafeArea',
       globals: {
         '@capacitor/core': 'capacitorExports',
       },
