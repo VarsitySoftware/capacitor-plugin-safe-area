@@ -4,11 +4,11 @@ Object.defineProperty(exports, '__esModule', { value: true });
 
 var core = require('@capacitor/core');
 
-const SafeArea = core.registerPlugin('SafeArea', {
-    web: () => Promise.resolve().then(function () { return web; }).then(m => new m.SafeAreaWeb()),
+const CapacitorSafeArea = core.registerPlugin('CapacitorSafeArea', {
+    web: () => Promise.resolve().then(function () { return web; }).then(m => new m.CapacitorSafeAreaWeb()),
 });
 
-class SafeAreaWeb extends core.WebPlugin {
+class CapacitorSafeAreaWeb extends core.WebPlugin {
     async getSafeAreaInsets() {
         return {
             insets: {
@@ -28,8 +28,8 @@ class SafeAreaWeb extends core.WebPlugin {
 
 var web = /*#__PURE__*/Object.freeze({
     __proto__: null,
-    SafeAreaWeb: SafeAreaWeb
+    CapacitorSafeAreaWeb: CapacitorSafeAreaWeb
 });
 
-exports.SafeArea = SafeArea;
+exports.CapacitorSafeArea = CapacitorSafeArea;
 //# sourceMappingURL=plugin.cjs.js.map

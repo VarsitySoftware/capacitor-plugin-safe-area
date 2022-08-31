@@ -1,7 +1,7 @@
 {
   "api": {
-    "name": "SafeAreaPlugin",
-    "slug": "safeareaplugin",
+    "name": "CapacitorSafeAreaPlugin",
+    "slug": "capacitorsafeareaplugin",
     "docs": "",
     "tags": [],
     "methods": [
