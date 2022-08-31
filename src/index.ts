@@ -1,10 +1,10 @@
 import { registerPlugin } from '@capacitor/core';
 
-import type { SafeAreaPlugin } from './definitions';
+import type { CapacitorSafeAreaPlugin } from './definitions';
 
-const SafeArea = registerPlugin<SafeAreaPlugin>('SafeArea', {
-  web: () => import('./web').then(m => new m.SafeAreaWeb()),
+const CapacitorSafeArea = registerPlugin<CapacitorSafeAreaPlugin>('CapacitorSafeArea', {
+  web: () => import('./web').then(m => new m.CapacitorSafeAreaWeb()),
 });
 
 export * from './definitions';
-export { SafeArea };
+export { CapacitorSafeArea };
