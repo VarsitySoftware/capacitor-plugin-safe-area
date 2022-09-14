@@ -12,19 +12,19 @@ public class CapacitorSafeArea {
 
     public JSObject getSafeAreaInsets(Bridge bridge) {
         if (Build.VERSION.SDK_INT < Build.VERSION_CODES.P) {
-            Log.i(SafeAreaPlugin.class.toString(), String.format("Requires at least %d+", Build.VERSION_CODES.P));
+            Log.i(CapacitorSafeAreaPlugin.class.toString(), String.format("Requires at least %d+", Build.VERSION_CODES.P));
             return this.result(0, 0, 0, 0);
         }
 
         WindowInsets windowInsets = bridge.getActivity().getWindow().getDecorView().getRootWindowInsets();
         if (windowInsets == null) {
-            Log.i(SafeAreaPlugin.class.toString(), "WindowInsets is not available.");
+            Log.i(CapacitorSafeAreaPlugin.class.toString(), "WindowInsets is not available.");
             return this.result(0, 0, 0, 0);
         }
 
         DisplayCutout displayCutout = windowInsets.getDisplayCutout();
         if (displayCutout == null) {
-            Log.i(SafeAreaPlugin.class.toString(), "DisplayCutout is not available.");
+            Log.i(CapacitorSafeAreaPlugin.class.toString(), "DisplayCutout is not available.");
             return this.result(0, 0, 0, 0);
         }
 
