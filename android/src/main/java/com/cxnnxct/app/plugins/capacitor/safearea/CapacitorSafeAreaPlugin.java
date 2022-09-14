@@ -25,14 +25,14 @@ public class CapacitorSafeAreaPlugin extends Plugin {
     @PluginMethod
     public void getSafeAreaInsets(PluginCall call) {
         JSObject ret = new JSObject();
-        ret.put(KEY_INSET, safeAreaInsets.getSafeAreaInsets(this.getBridge()));
+        ret.put(KEY_INSET, implementation.getSafeAreaInsets(this.getBridge()));
         call.resolve(ret);
     }
 
     @PluginMethod
     public void getStatusBarHeight(PluginCall call) {
         JSObject ret = new JSObject();
-        ret.put(Bar_Height, safeAreaInsets.getStatusBarHeight(this.getBridge()));
+        ret.put(Bar_Height, implementation.getStatusBarHeight(this.getBridge()));
         call.resolve(ret);
     }
 
