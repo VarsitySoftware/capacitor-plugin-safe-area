@@ -8,6 +8,7 @@ import com.getcapacitor.annotation.CapacitorPlugin;
 
 import android.content.Context;
 import android.hardware.Sensor;
+import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.os.Build;
@@ -16,7 +17,7 @@ import androidx.annotation.RequiresApi;
 
 
 @CapacitorPlugin(name = "CapacitorSafeArea")
-public class CapacitorSafeAreaPlugin extends Plugin implements SensorEventListener {
+public class CapacitorSafeAreaPlugin extends Plugin implements SensorEventListener{
 
     private CapacitorSafeArea implementation = new CapacitorSafeArea();
     private static final String KEY_INSET = "insets";
@@ -51,8 +52,7 @@ public class CapacitorSafeAreaPlugin extends Plugin implements SensorEventListen
         SensorManager sm = (SensorManager) this.getBridge().getActivity().getSystemService(Context.SENSOR_SERVICE);
         sm.unregisterListener((SensorEventListener) this);
     }
-    
-    
+
     @Override
     public void onSensorChanged(SensorEvent event) {
 
