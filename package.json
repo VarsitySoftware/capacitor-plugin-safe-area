@@ -1,7 +1,7 @@
 {
-  "name": "@varsitysoftware/capacitor-plugin-safe-area",
-  "version": "0.0.2",
-  "description": "A plugin to get safe area info",
+  "name": "capacitor-plugin-safe-area",
+  "version": "0.0.6",
+  "description": "get safe area",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
@@ -11,7 +11,7 @@
     "android/build.gradle",
     "dist/",
     "ios/Plugin/",
-    "VarsitysoftwareCapacitorPluginSafeArea.podspec"
+    "CapacitorPluginSafeArea.podspec"
   ],
   "author": "VarsitySoftware<info@varsitysoftware.com>",
   "license": "MIT",
@@ -37,17 +37,17 @@
     "eslint": "eslint . --ext ts",
     "prettier": "prettier \"**/*.{css,html,ts,js,java}\"",
     "swiftlint": "node-swiftlint",
-    "docgen": "docgen --api CapacitorSafeAreaPlugin --output-readme README.md --output-json dist/docs.json",
+    "docgen": "docgen --api SafeAreaPlugin --output-readme README.md --output-json dist/docs.json",
     "build": "npm run clean && npm run docgen && tsc && rollup -c rollup.config.js",
     "clean": "rimraf ./dist",
     "watch": "tsc --watch",
     "prepublishOnly": "npm run build"
   },
   "devDependencies": {
-    "@capacitor/android": "^4.0.0",
+    "@capacitor/android": "^5.0.0",
     "@capacitor/core": "^5.0.0",
     "@capacitor/docgen": "^0.0.18",
-    "@capacitor/ios": "^4.0.0",
+    "@capacitor/ios": "^5.0.0",
     "@ionic/eslint-config": "^0.3.0",
     "@ionic/prettier-config": "^1.0.1",
     "@ionic/swiftlint-config": "^1.1.2",
