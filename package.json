@@ -1,6 +1,6 @@
 {
   "name": "capacitor-plugin-safe-area",
-  "version": "0.0.6",
+  "version": "0.0.8",
   "description": "get safe area",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
